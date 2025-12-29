@@ -202,7 +202,8 @@ Predictive and proactive optimization techniques
 
 👤 Author
 
-Khadijah Mujibir Rahman
+Khadijah Mujibir Rahiman
 B.E. Computer Science and Engineering
 St. Joseph’s Institute of Technology
+
 
