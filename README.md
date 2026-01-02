@@ -1,12 +1,12 @@
 Intelligent Resource Allocation Predictor (OS + Machine Learning)
-📌 Project Overview
+ Project Overview
 
 Modern operating systems allocate CPU and memory reactively, responding only after load increases.
 This project proposes an intelligent, proactive resource allocation system that uses machine learning to predict future system load and recommend optimal resource allocation decisions before overload occurs.
 
 The system integrates Operating System concepts with Regression, Classification, and Time-Series forecasting to analyze real-time system metrics and assist in intelligent scheduling decisions.
 
-🎯 Objectives
+ Objectives
 
 Collect real-time OS performance metrics
 
@@ -20,7 +20,7 @@ Forecast future trends using time-series analysis
 
 Provide intelligent resource allocation recommendations
 
-🧠 Core Concepts Used
+ Core Concepts Used
 
 Operating Systems (CPU scheduling, memory utilization)
 
@@ -34,7 +34,7 @@ Predictive Analytics
 
 Proactive Resource Management
 
-🏗️ System Architecture
+ System Architecture
 System Metrics (CPU, Memory, Disk)
         ↓
 Data Collection (psutil)
@@ -48,7 +48,7 @@ ML Models
         ↓
 Intelligent Resource Recommendation
 
-🛠️ Technology Stack
+ Technology Stack
 
 Language: Python
 
@@ -72,7 +72,7 @@ VS Code
 
 GitHub
 
-📁 Project Structure
+ Project Structure
 Intelligent-Resource-Allocation-Predictor/
 │
 ├── data/
@@ -95,44 +95,44 @@ Intelligent-Resource-Allocation-Predictor/
 ├── README.md
 └── .gitignore
 
-⚙️ How the System Works
-1️⃣ Data Collection
+ How the System Works
+1️ Data Collection
 
 Collects real-time CPU, memory, and disk usage using psutil
 
 Labels workload as Light / Medium / Heavy
 
-2️⃣ Feature Engineering
+2️ Feature Engineering
 
 Creates derived features such as CPU–memory interaction ratios
 
 Improves learning efficiency of ML models
 
-3️⃣ Regression Model
+3️ Regression Model
 
 Predicts future CPU usage
 
 Helps estimate upcoming resource demand
 
-4️⃣ Classification Model
+4️ Classification Model
 
 Classifies workload intensity
 
 Enables policy-based resource decisions
 
-5️⃣ Time-Series Forecasting
+5️ Time-Series Forecasting
 
 Uses ARIMA to predict CPU trends over time
 
 Enables proactive scheduling
 
-6️⃣ Intelligent Predictor
+6️ Intelligent Predictor
 
 Combines all models
 
 Outputs real-time recommendation for resource allocation
 
-▶️ How to Run the Project
+ How to Run the Project
 1. Clone the repository
 git clone https://github.com/your-username/Intelligent-Resource-Allocation-Predictor.git
 cd Intelligent-Resource-Allocation-Predictor
@@ -152,7 +152,7 @@ python src/train_classifier.py
 python src/time_series_forecast.py
 python src/predictor.py
 
-📊 Sample Output
+ Sample Output
 ===== INTELLIGENT RESOURCE ALLOCATION PREDICTOR =====
 
 Current CPU Usage      : 34.20%
@@ -164,7 +164,7 @@ Workload Classification: Medium
 
 Recommendation: Maintain BALANCED resource allocation.
 
-💡 Key Highlights
+ Key Highlights
 
 Uses real OS metrics, not synthetic data
 
@@ -176,7 +176,7 @@ Modular and extensible design
 
 Industry-relevant problem statement
 
-🧪 Possible Enhancements
+ Possible Enhancements
 
 Integrate with OS schedulers
 
@@ -188,7 +188,7 @@ Visualize metrics using dashboards
 
 Extend to distributed systems
 
-🎓 Academic & Interview Relevance
+ Academic & Interview Relevance
 
 This project demonstrates:
 
@@ -205,5 +205,6 @@ Predictive and proactive optimization techniques
 Khadijah Mujibir Rahiman
 B.E. Computer Science and Engineering
 St. Joseph’s Institute of Technology
+
 
 
