@@ -1,210 +1,114 @@
-Intelligent Resource Allocation Predictor (OS + Machine Learning)
- Project Overview
+Intelligent Resource Allocation Predictor
 
-Modern operating systems allocate CPU and memory reactively, responding only after load increases.
-This project proposes an intelligent, proactive resource allocation system that uses machine learning to predict future system load and recommend optimal resource allocation decisions before overload occurs.
+Overview
+Intelligent Resource Allocation Predictor is a machine learning based system designed to predict and optimize resource allocation using historical usage data.
 
-The system integrates Operating System concepts with Regression, Classification, and Time-Series forecasting to analyze real-time system metrics and assist in intelligent scheduling decisions.
+The project focuses on data driven decision making to improve system performance while reducing resource wastage and operational cost.
 
- Objectives
+Problem Statement
+Many modern systems rely on static or rule based resource allocation mechanisms.
 
-Collect real-time OS performance metrics
+Over allocation results in wasted computational resources and increased cost.
 
-Perform feature engineering on system-level data
+Under allocation causes performance degradation and system delays.
 
-Predict future CPU usage using regression
+Manual or heuristic based allocation does not scale well with dynamic workloads.
 
-Classify workload intensity using classification
+These challenges highlight the need for an intelligent predictive approach.
 
-Forecast future trends using time-series analysis
+Proposed Solution
+This project introduces a machine learning driven solution for intelligent resource allocation.
 
-Provide intelligent resource allocation recommendations
+Historical resource usage data is collected and analyzed.
 
- Core Concepts Used
+Data preprocessing and feature engineering are applied to improve data quality.
 
-Operating Systems (CPU scheduling, memory utilization)
+A supervised machine learning model is trained to learn usage patterns.
 
-Machine Learning (Regression & Classification)
+The trained model predicts future resource requirements.
 
-Time Series Forecasting (ARIMA)
+Predictions are used to guide optimal allocation decisions.
 
-Feature Engineering
+This enables proactive rather than reactive resource management.
 
-Predictive Analytics
+System Workflow
+Data collection from logs or datasets.
 
-Proactive Resource Management
+Data preprocessing including cleaning and normalization.
 
- System Architecture
-System Metrics (CPU, Memory, Disk)
-        ↓
-Data Collection (psutil)
-        ↓
-Feature Engineering
-        ↓
-ML Models
-  ├── Regression (CPU Prediction)
-  ├── Classification (Workload Type)
-  └── Time Series Forecasting
-        ↓
-Intelligent Resource Recommendation
+Model training on historical usage data.
 
- Technology Stack
+Prediction of future resource demand.
 
-Language: Python
+Resource allocation based on predicted requirements.
 
-Libraries:
+Machine Learning Techniques Used
+Supervised learning for prediction tasks.
 
-psutil
+Regression models for continuous resource estimation.
 
-pandas
+Feature engineering to capture usage patterns and trends.
 
-numpy
+Model evaluation using appropriate performance metrics.
 
-scikit-learn
+Core Computer Science Concepts
+Machine learning and predictive modeling.
 
-statsmodels
+Data preprocessing and feature selection.
 
-joblib
+Regression algorithms and optimization techniques.
 
-Tools:
+System optimization and resource management.
 
-VS Code
+Data analysis and trend identification.
 
-GitHub
+Technologies Used
+Python 3
 
- Project Structure
-Intelligent-Resource-Allocation-Predictor/
-│
-├── data/
-│   ├── system_metrics.csv
-│   └── processed_metrics.csv
-│
-├── models/
-│   ├── cpu_regressor.pkl
-│   └── workload_classifier.pkl
-│
-├── src/
-│   ├── data_collector.py
-│   ├── feature_engineering.py
-│   ├── train_regression.py
-│   ├── train_classifier.py
-│   ├── time_series_forecast.py
-│   └── predictor.py
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
+NumPy
 
- How the System Works
-1️ Data Collection
+Pandas
 
-Collects real-time CPU, memory, and disk usage using psutil
+Scikit learn
 
-Labels workload as Light / Medium / Heavy
+Matplotlib
 
-2️ Feature Engineering
+How to Run
+Create and activate a virtual environment.
 
-Creates derived features such as CPU–memory interaction ratios
+Install the required dependencies.
 
-Improves learning efficiency of ML models
+Run the application using the command below.
 
-3️ Regression Model
+python main.py
 
-Predicts future CPU usage
+Applications
+Cloud resource management.
 
-Helps estimate upcoming resource demand
+Data center optimization.
 
-4️ Classification Model
+Intelligent scheduling systems.
 
-Classifies workload intensity
+Infrastructure cost optimization.
 
-Enables policy-based resource decisions
+Performance aware system design.
 
-5️ Time-Series Forecasting
+Why This Project Is Important
+Demonstrates a complete end to end machine learning pipeline.
 
-Uses ARIMA to predict CPU trends over time
+Solves a real world optimization problem.
 
-Enables proactive scheduling
+Shows practical use of predictive analytics.
 
-6️ Intelligent Predictor
+Highly relevant for machine learning and data science roles.
 
-Combines all models
+Easy to extend with advanced models.
 
-Outputs real-time recommendation for resource allocation
-
- How to Run the Project
-1. Clone the repository
-git clone https://github.com/your-username/Intelligent-Resource-Allocation-Predictor.git
-cd Intelligent-Resource-Allocation-Predictor
-
-2. Create and activate virtual environment
-python -m venv venv
-venv\Scripts\activate
-
-3. Install dependencies
-pip install -r requirements.txt
-
-4. Run step-by-step
-python src/data_collector.py
-python src/feature_engineering.py
-python src/train_regression.py
-python src/train_classifier.py
-python src/time_series_forecast.py
-python src/predictor.py
-
- Sample Output
-===== INTELLIGENT RESOURCE ALLOCATION PREDICTOR =====
-
-Current CPU Usage      : 34.20%
-Current Memory Usage   : 62.10%
-Current Disk Usage     : 45.00%
-
-Predicted CPU Usage    : 38.45%
-Workload Classification: Medium
-
-Recommendation: Maintain BALANCED resource allocation.
-
- Key Highlights
-
-Uses real OS metrics, not synthetic data
-
-Combines multiple ML paradigms
-
-OS-aware decision-making
-
-Modular and extensible design
-
-Industry-relevant problem statement
-
- Possible Enhancements
-
-Integrate with OS schedulers
-
-Add cloud workload datasets
-
-Implement reinforcement learning
-
-Visualize metrics using dashboards
-
-Extend to distributed systems
-
- Academic & Interview Relevance
-
-This project demonstrates:
-
-Strong understanding of Operating Systems
-
-Practical application of Machine Learning
-
-Real-world system design thinking
-
-Predictive and proactive optimization techniques
-
-👤 Author
-
+Author
 Khadijah Mujibir Rahiman
 B.E. Computer Science and Engineering
-St. Joseph’s Institute of Technology
 
+Conclusion
+This project demonstrates how machine learning can be applied to predict resource demand and enable efficient resource allocation.
 
-
+It highlights the importance of data driven decision making in modern systems.
